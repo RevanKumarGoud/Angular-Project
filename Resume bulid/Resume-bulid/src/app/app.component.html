@@ -1,0 +1,20 @@
+<app-resume-details 
+[childPosts]="paresntName"
+[deatails]="pDeatails"
+[Emails]="RDeatails"
+[Weblink]="MDeatails"
+
+>
+</app-resume-details>
+<div class="card">
+<form>
+    <div class="card-body">
+    <input type="text" placeholder="Name" name="post" [(ngModel)]="post" (change)="AddName()">
+    <div class="contactInfo">
+      <input type="tel" placeholder="Enter mobile number" name="mobileNumber" [(ngModel)]="mobileNumber" (change)="AddUser()">
+      <input type="email" placeholder="Enter Email" name="Email" [(ngModel)]="Email" (change)="AddUser1()">
+      <input type="url" placeholder="Website link" name="Websitelink" [(ngModel)]="Websitelink" (change)="AddUser2()">
+    </div>
+</div>
+</form>  
+</div>
